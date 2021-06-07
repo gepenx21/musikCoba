@@ -1,0 +1,25 @@
+<resources>
+    <string name="drawer_home">Home</string>
+    <string name="drawer_share">Share This</string>
+    <string name="drawer_rate">Rate App</string>
+    <string name="drawer_more">More Apps</string>
+
+    <string name="AUTHOR">Gedang Goreng</string>
+    <string name="PUBLISHER_EMAIL">Entertainment</string>
+    <string name="MORE_APP">https://play.google.com/store/apps/developer?id=Gedang+Goreng</string>
+
+    <string name="app_name">Nama App</string>
+    <string name="version_code">1.0.0</string>
+    <string name="developer_name"> Gedang Goreng Dev</string>
+    <string name="click_song">Select Song</string>
+    <string name="duration">00:00</string>
+    <string name="app_id">e7479a4ab027f89e1adf49dc91e532801fe2b69b46ef9fa6</string>
+    <string name="splash_bottom">Developed By Gedang Goreng</string>
+    <string name="share">Hi, Try this cool application</string>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="gdpr_title">Do you want us to show you personalized ads?</string>
+    <string name="gdpr_body">This application uses Appodeals to activate / give you a personalized advertising experience. By clicking "Accept" you agree to share your personal data on the Appodeals Network and its Business Partners and agree to the Appodeals privacy policy to allow Appodeals and its partners to provide you with relevant advertisements.</string>
+
+    <string name="about">This app developed by Gedang Goreng Dev.\nAll songs that we provide are fully copyrighted by the song owner.\n\nPlease visit the link below to view the Privacy Policy.</string>
+
+</resources>

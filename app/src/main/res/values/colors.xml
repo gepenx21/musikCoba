@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8d9093</color>
+    <color name="colorPrimaryDark">#3b3938</color>
+    <color name="colorAccent">#0365FD</color>
+    <color name="background_toolbar">#23282b</color>
+    <color name="background_selected_item">#0465FC</color>
+    <color name="text_player">#f9f9f9f9</color>
+    <color name="black">#001310</color>
+    <color name="dark_black">#ff0e0e0e</color>
+    <color name="trans">#0D47A1</color>
+</resources>
