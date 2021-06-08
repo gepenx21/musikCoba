@@ -1,5 +1,6 @@
 package com.appodeals.musikcoba;
 
+import android.annotation.SuppressLint;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class AboutFragment extends DialogFragment {
     private WebView webView;
     private String version_name, version_code;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_about, container, false);
@@ -57,7 +59,7 @@ public class AboutFragment extends DialogFragment {
             about_content.setVisibility(View.GONE);
             webView.setWebViewClient(new WebViewClient());
             webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
-            webView.loadUrl("file:///android_asset/appodeals.html");
+            webView.loadUrl("file:///android_asset/aboutPrivacyPolicy.html");
             webView.setVisibility(View.VISIBLE);
         });
     }
