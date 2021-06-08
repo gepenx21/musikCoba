@@ -17,11 +17,6 @@ public class Config {
     private static int mCount = 0;
     private static int counter = 3;
 
-//    private final Activity activity;
-
-//    public Config(Activity activity) {
-//        this.activity = activity;
-//    }
 
     static void randomNum() {
         int number = 7;
