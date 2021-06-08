@@ -1,6 +1,7 @@
 package com.appodeals.musikcoba;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 changeSelectedSong(0);
                 prepareSong(next);
             }
-            Appodeal.show(MainActivity.this, Appodeal.INTERSTITIAL);
+            Config.showIntersititial(this, true);
         });
         handleSeekbar();
         pushPlay();
@@ -206,8 +207,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareSong(Song song){
-
-        Appodeal.show(MainActivity.this, Appodeal.INTERSTITIAL);
+        Config.showIntersititial(this, true);
         Config.isPlaying = true;
         String title = song.getTitle();
         long currentSongLength = song.getDuration();
@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity {
     private void pushPrevious(){
 
         iv_previous.setOnClickListener(v -> {
-            Appodeal.show(MainActivity.this, Appodeal.INTERSTITIAL);
+            Config.showIntersititial(this, true);
             firstLaunch = false;
             if(mediaPlayer != null){
                 if(currentIndex - 1 >= 0){
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void pushNext(){
         iv_next.setOnClickListener(v -> {
-            Appodeal.show(MainActivity.this, Appodeal.INTERSTITIAL);
+            Config.showIntersititial(this, true);
             firstLaunch = false;
             if(mediaPlayer != null){
                 if(currentIndex + 1 < songList.size()){

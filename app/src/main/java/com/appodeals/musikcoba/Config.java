@@ -2,6 +2,7 @@ package com.appodeals.musikcoba;
 
 
 import android.app.Activity;
+import android.util.Log;
 
 import com.appodeal.ads.Appodeal;
 import com.appodeal.ads.AppodealRequestCallbacks;
@@ -23,11 +24,20 @@ public class Config {
         counter = new Random().nextInt(number);
     }
 
-    public void showIntersititial(Activity activity) {
-        if (Appodeal.isLoaded(Appodeal.INTERSTITIAL)) {
+    public static void showIntersititial(Activity activity, boolean count) {
+        if(count){
+            mCount++;
+            Log.d("mcount",Integer.toString(mCount));
+            if(counter <= mCount) {
+                if (Appodeal.isLoaded(Appodeal.INTERSTITIAL)) {
+                    Appodeal.show(activity, Appodeal.INTERSTITIAL);
+                    mCount=0;
+                    randomNum();
+                }else mCount--;
+            }
+        } else if (Appodeal.isLoaded(Appodeal.INTERSTITIAL)) {
             Appodeal.show(activity, Appodeal.INTERSTITIAL);
         }
     }
 
-    
 }
